@@ -1,0 +1,14 @@
+def swap_case(s):
+    mod_s = ''
+    for char in s:
+        if char.isupper():
+            mod_s += char.lower()
+        elif char.islower():
+            mod_s += char.upper()
+        else:
+            mod_s += char
+    return mod_s
+
+s = input()
+result = swap_case(s)
+print(result)
